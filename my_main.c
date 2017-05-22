@@ -388,7 +388,7 @@ void my_main() {
 	  break;
     }
     char * s = malloc(sizeof(char ));
-    sprintf(s, "./anim/%03d",j);
+    sprintf(s, "./anim/%03d.jpg",j);
     save_extension(t, s);
     printf("\n");
     }

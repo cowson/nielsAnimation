@@ -1,10 +1,25 @@
-frames 100
-basename simple
+frames 30
+basename frame
 push
-move 250 250 0
-scale 2 2 2 bigenator
-rotate y 360 spinny
-sphere 0 0 0 100
-vary spinny 0 99 0 1
-vary bigenator 0 49 0 1
-vary bigenator 50 99 1 0
+    push
+        move 250 250 0
+        push
+            rotate z 75
+            rotate x 1 spinny
+            sphere 0 0 0 70
+        pop
+        push
+            rotate z 45
+            rotate x 1 spinny
+            rotate y 1 spinny
+            torus 0 0 0 20 110
+        pop
+        push
+        rotate x 45
+        rotate z 1 spinny
+        rotate y 1 spinny
+        torus 0 0 0 20 110
+    pop
+pop
+
+vary spinny 0 29 0 360
